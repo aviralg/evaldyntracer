@@ -20,6 +20,7 @@ class EvalExpressionAnalysis {
     TableWriter expression_table_writer_;
 
     std::tuple<std::string, sexptype_t> get_caller_information();
+    std::tuple<size_t, size_t> get_expression_complexity(const SEXP expression);
 };
 
 #endif /* __EVAL_EXPRESSION_ANALYSIS_H__ */
